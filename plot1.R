@@ -18,7 +18,7 @@ true.vector<-data[,1]>="2007-02-01 00:00:00" & data[,1]<="2007-02-02 23:59:00"
 sub.data<-data[true.vector,]
 row.names(sub.data)<-NULL
 
-#ploting
+#ploting. no widht or heigh parameters added because by defualt it is 480x480
 png("plot1.png")
 
 hist(sub.data$Global_active_power, xlab = "Global Active Power (kilowatts)",
